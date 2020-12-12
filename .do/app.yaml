@@ -2,7 +2,7 @@ name: do-uptime-monitor
 services:
 - environment_slug: node-js
   github:
-    branch: main
+    branch: master
     deploy_on_push: true
     repo: TorstenDittmann/do-uptime-monitor
   name: do-uptime-monitor
