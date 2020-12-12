@@ -1,0 +1,4 @@
+name: do-uptime-monitor
+services:
+- environment_slug: node-js
+  name: do-uptime-monitor
