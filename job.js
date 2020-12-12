@@ -8,6 +8,7 @@ export default (config) => {
       method: "GET",
       ...(config.settings ? config.settings : {})
     })
-    state.setStatus(config.name, response.status == 200)
+    state.setStatus(config.name, response.status == 200);
+    console.log(`${config.name} status is ${response.status}`);
   })
 }
