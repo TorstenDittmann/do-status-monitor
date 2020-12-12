@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   "title": "Demo Title",
   "services": [
     {

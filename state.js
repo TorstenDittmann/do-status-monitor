@@ -12,4 +12,4 @@ class State {
   }
 }
 
-export default (new State);
+module.exports = (new State);

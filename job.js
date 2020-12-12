@@ -1,8 +1,8 @@
-import fetch from "node-fetch";
-import cron from "node-cron";
-import state from "./state.js";
+const fetch = require("node-fetch");
+const cron = require("node-cron");
+const state = require("./state.js");
 
-export default (config) => {
+module.exports = (config) => {
   cron.schedule(config.cron, async () => {
     const response = await fetch(config.url, {
       method: "GET",
