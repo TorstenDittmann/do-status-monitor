@@ -3,7 +3,7 @@ import setupJob from "./job.js";
 import config from "./config.js";
 import state from "./state.js";
 
-
+const port = process.env.PORT || 3000;
 const app = express();
 app.set('view engine', 'pug')
 
@@ -15,7 +15,7 @@ app.get("/api", (req, res) => {
   res.json(state.services);
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
   config.services.forEach(setupJob);
   console.log("Uptime Monitor started!")
 });
