@@ -1,8 +1,8 @@
-const express = require("express");
-const morgan = require("morgan");
-const setupJob = require("./job.js");
-const config = require("./config.js");
-const state = require("./state.js");
+import express from "express";
+import morgan from "morgan";
+import setupJob from "./job.js";
+import config from "./config.js";
+import state from "./state.js";
 
 const port = process.env.PORT || 3000;
 const app = express();
