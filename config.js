@@ -1,6 +1,6 @@
 export default {
-  "title": "Demo Title",
-  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur cupiditate accusamus voluptatem fugiat aut quam cumque voluptas vero, reprehenderit iure, repudiandae tenetur molestias aliquid praesentium. Iusto odit nihil ad?",
+  "title": "do-status-monitor",
+  "description": "Is your website online? Is your backend still up? Let’s see! Monitor any specific website or API you want.",
   "email": "t.dittmann@omniawrite.com",
   "twitter": "https://twitter.com/DittmannTorsten",
   "facebook": "",

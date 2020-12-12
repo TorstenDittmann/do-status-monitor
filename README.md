@@ -19,8 +19,8 @@ Edit `config.js` to meet customize the site and services to check the status.
 
 ```javascript
 export default {
-  "title": "Demo Title",
-  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur cupiditate accusamus voluptatem fugiat aut quam cumque voluptas vero, reprehenderit iure, repudiandae tenetur molestias aliquid praesentium. Iusto odit nihil ad?",
+  "title": "Your title",
+  "description": "Demoe description.",
   "email": "t.dittmann@omniawrite.com",
   "twitter": "https://twitter.com/DittmannTorsten",
   "facebook": "",
