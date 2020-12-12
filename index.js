@@ -17,6 +17,7 @@ app.get("/api", (req, res) => {
 
 app.listen(3000, () => {
   config.services.forEach(setupJob);
+  console.log("Uptime Monitor started!")
 });
 
 config.services.forEach(service => {
