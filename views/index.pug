@@ -14,6 +14,10 @@ section.hero
       .column.is-6.is-offset-3
         h1.title.has-text-centered= config.title
         h2.subtitle.has-text-centered= config.description
+        if summary
+          .notification.is-success As it looks, everything works!
+        else
+          .notification.is-warning As it looks, not all services could be reached.
         each service in services
           .card.m-3
             header.card-header

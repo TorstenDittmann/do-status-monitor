@@ -1,5 +1,7 @@
 ![do-status-monitor](https://github.com/TorstenDittmann/do-status-monitor/blob/master/logo.png "do-status-monitor")
 
+[Demo](https://do-status-monitor-ulp4u.ondigitalocean.app/)
+
 # Getting Started #
 These steps will get this status monitor running for you using DigitalOcean.
 

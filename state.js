@@ -9,7 +9,7 @@ class State {
       this.services[index].status = status;
       this.services[index].time = time;
       this.services[index].lastCheck = Date.now();
-      console.log(`${new Date(this.services[index].lastCheck).toLocaleString()} - ${status ? '✔' : '❌'} ${name}`);
+      console.log(`${new Date(this.services[index].lastCheck).toLocaleString()} - ${status ? '✅' : '❌'} ${name}`);
     }
   }
 }

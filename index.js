@@ -14,6 +14,7 @@ app.get("/", (req, res) => {
   res.render("index", {
     config: config,
     services: state.services,
+    summary: !state.services.some(service => !service.status)
   });
 });
 
