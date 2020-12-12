@@ -23,7 +23,7 @@ app.get("/api", (req, res) => {
 
 app.listen(port, () => {
   config.services.forEach(setupJob);
-  console.log(`Uptime Monitor started on port ${port}!`);
+  console.log(`Status Monitor started on port ${port}!`);
 });
 
 config.services.forEach((service) => {
