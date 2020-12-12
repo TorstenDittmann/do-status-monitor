@@ -14,7 +14,7 @@ export default {
     },
     {
       "name": "Bad service",
-      "url": "https://123414sdf.com",
+      "url": "https://thiswillalwaybeoffline.cool",
       "description": "This service is always broken 😿",
       "cron": "* * * * *",
       "status": 200

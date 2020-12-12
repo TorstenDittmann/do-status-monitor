@@ -1,6 +1,5 @@
 ![do-status-monitor](https://github.com/TorstenDittmann/do-status-monitor/blob/master/logo.png "do-status-monitor")
 
-
 # Getting Started #
 These steps will get this status monitor running for you using DigitalOcean.
 
@@ -18,12 +17,12 @@ After forking the repo, you should now be viewing this README in your own github
 
 ## Configuration ##
 
-Edit `config.js` to meet customize the site and services to check the status.
+Edit `config.js` to customize the status page and add services to check.
 
 ```javascript
 export default {
   "title": "Your title",
-  "description": "Demoe description.",
+  "description": "Example description.",
   "email": "t.dittmann@omniawrite.com",
   "twitter": "https://twitter.com/DittmannTorsten",
   "facebook": "",
@@ -50,3 +49,9 @@ export default {
   ]
 }
 ```
+
+## Deploying the App ##
+
+Click this button to deploy the app to the DigitalOcean App Platform.
+
+[![Deploy to DO](https://mp-assets1.sfo2.digitaloceanspaces.com/deploy-to-do/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/torstendittmann/do-uptime-monitor/tree/master&refcode=44fe76800171)
