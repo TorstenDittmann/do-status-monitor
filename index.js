@@ -1,14 +1,16 @@
 import express from "express";
+import morgan from "morgan";
 import setupJob from "./job.js";
 import config from "./config.js";
 import state from "./state.js";
 
 const port = process.env.PORT || 3000;
 const app = express();
-app.set('view engine', 'pug')
+app.set("view engine", "pug");
+app.use(morgan("common"))
 
-app.get('/', (req, res) => {
-  res.render('index', { title: 'Hey', message: 'Hello there!', services: state.services })
+app.get("/", (req, res) => {
+  res.render("index", { title: "Hey", message: "Hello there!", services: state.services })
 })
 
 app.get("/api", (req, res) => {
