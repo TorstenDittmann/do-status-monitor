@@ -2,25 +2,56 @@ html
   head
     meta(charset='utf-8')
     meta(name='viewport' content='width=device-width, initial-scale=1')
-    title= title
+    meta(http-equiv='refresh' content='30')
+    title= config.title
     link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css')
+    link(rel='stylesheet' href='https://jenil.github.io/bulmaswatch/darkly/bulmaswatch.min.css')
     script(defer='' src='https://use.fontawesome.com/releases/v5.14.0/js/all.js')
   body
-section.hero.is-info.is-fullheight
+section.hero
   .hero-body
-    .container.has-text-centered
+    .container
       .column.is-6.is-offset-3
-        h1.title= title
-        h2.subtitle
-          | $this is the best software platform for running an internet business. We handle billions of dollars every year for forward-thinking businesses around the world.
+        h1.title.has-text-centered= config.title
+        h2.subtitle.has-text-centered= config.description
         each service in services
           .card.m-3
             header.card-header
               p.card-header-title= service.name
               span.card-header-icon
-                span.icon.has-text-success
-                  i.fas.fa-check-circle
+                if service.status
+                  span.icon.has-text-success
+                    i.fas.fa-check-circle
+                else if service.status == null
+                  span.icon.has-text-warning
+                    i.fas.fa-exclamation-triangle
+                else 
+                  span.icon.has-text-danger
+                    i.fas.fa-ban
             .card-content
-              .content= service.desc
-              footer.card-footer
-                small.card-footer-item= "last check " + new Date(service.lastCheck).toLocaleString()
+              .content= service.description
+              if service.status
+                footer.card-footer
+                  small.card-footer-item= 'last check ' + new Date(service.lastCheck).toLocaleString()
+                  small.card-footer-item= service.time + 'ms'
+              else if service.status != null
+                footer.card-footer
+                  small.card-footer-item= 'last check ' + new Date(service.lastCheck).toLocaleString()
+footer.footer
+  .container
+    .content.has-text-centered
+      if config.email
+        a(href='mailto:' + config.email)
+          span.icon
+            i.far.fa-envelope
+      if config.twitter
+        a(href= config.twitter)  
+          span.icon
+              i.fab.fa-twitter
+      if config.facebook
+        a(href= config.facebook)  
+          span.icon
+              i.fab.fa-facebook
+      a(href='https://github.com/TorstenDittmann/do-status-monitor')  
+        span.icon
+            i.fab.fa-github

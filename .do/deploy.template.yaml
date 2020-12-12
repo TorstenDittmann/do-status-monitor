@@ -1,8 +1,8 @@
 spec:
-  name: do-uptime-monitor
+  name: do-status-monitor
   services:
   - environment_slug: node-js
     git:
       branch: master
-      repo_clone_url: https://github.com/torstendittmann/do-uptime-monitor.git
-    name: do-uptime-monitor
+      repo_clone_url: https://github.com/torstendittmann/do-status-monitor.git
+    name: do-status-monitor
