@@ -1,3 +1,6 @@
+![do-status-monitor](https://github.com/TorstenDittmann/do-status-monitor/blob/master/logo.png "do-status-monitor")
+
+
 # Getting Started #
 These steps will get this status monitor running for you using DigitalOcean.
 
