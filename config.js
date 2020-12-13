@@ -6,21 +6,21 @@ export default {
   "facebook": "",
   "services": [
     {
-      "name": "DigitalOcean.com",
+      "name": "DigitalOcean Frontend",
       "url": "https://www.digitalocean.com/",
       "description": "DigitalOcean Website",
       "cron": "* * * * *",
       "status": 200
     },
     {
-      "name": "Bad service",
+      "name": "Broken Website Frontend",
       "url": "https://thiswillalwaybeoffline.cool",
       "description": "This service is always broken 😿",
       "cron": "* * * * *",
       "status": 200
     },
     {
-      "name": "Backend",
+      "name": "OmniaWrite Backend",
       "url": "https://app.omniawrite.com/api/templates",
       "description": "Backend of OmniaWrite.",
       "cron": "* * * * *",
